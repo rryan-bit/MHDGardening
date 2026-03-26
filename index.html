@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MHD Gardening – Professional Lawn & Garden Services</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-leaf">🌿</span>
+      <span class="logo-text">MHD<span class="logo-accent"> Gardening</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html" class="nav-cta">Sign Up</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="booking.html">Book</a>
+  <a href="contact.html">Contact</a>
+  <a href="signup.html">Sign Up</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Beautiful garden" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Brisbane & Surrounds</p>
+    <h1 class="hero-title">Your Garden,<br><em>Perfectly Kept.</em></h1>
+    <p class="hero-sub">Professional lawn mowing, hedging & full garden care — booked in seconds.</p>
+
+    <!-- INSTANT BOOKING WIDGET -->
+    <div class="booking-widget">
+      <h3 class="widget-title">Get an Instant Quote</h3>
+      <div class="widget-fields">
+        <div class="field-group">
+          <label>Street Address</label>
+          <input type="text" id="heroAddress" placeholder="e.g. 12 Rose Street" />
+        </div>
+        <div class="field-group">
+          <label>Suburb</label>
+          <input type="text" id="heroSuburb" placeholder="e.g. Sunnybank" />
+        </div>
+        <div class="field-group">
+          <label>Service</label>
+          <select id="heroService">
+            <option value="">Select a service…</option>
+            <option value="mow">🌿 Simple Mow</option>
+            <option value="hedges">✂️ Hedges & Lawn</option>
+            <option value="full">⭐ Full Service</option>
+          </select>
+        </div>
+        <button class="widget-btn" onclick="heroBook()">Book Now →</button>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <div class="container">
+    <p class="section-label">Why Choose Us</p>
+    <h2 class="section-title">Garden care done right.</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🗓️</div>
+        <h3>Easy Online Booking</h3>
+        <p>Book a visit in under a minute. Pick your date, your service, and we'll handle the rest.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Reliable & Punctual</h3>
+        <p>We show up on time, every time. No chasing, no excuses — just a tidy garden waiting for you.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌱</div>
+        <h3>Local Experts</h3>
+        <p>Based in Brisbane, we know local grasses, climates, and what keeps your garden thriving year-round.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Transparent Pricing</h3>
+        <p>No hidden fees. Know exactly what you're paying before we arrive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-preview">
+  <div class="container">
+    <p class="section-label">Our Services</p>
+    <h2 class="section-title">Choose your service.</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Lawn mowing">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Most Popular</span>
+          <h3>Simple Mow</h3>
+          <p>A clean, even mow to keep your lawn looking neat. Edges included.</p>
+          <a href="booking.html" class="service-link">Book This →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" alt="Hedge trimming">
+        </div>
+        <div class="service-body">
+          <h3>Hedges & Lawn</h3>
+          <p>Mowing plus hedge shaping and trimming. Ideal for regular upkeep.</p>
+          <a href="booking.html" class="service-link">Book This →</a>
+        </div>
+      </div>
+      <div class="service-card service-card--featured">
+        <div class="service-img-wrap">
+          <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=600&q=80" alt="Full garden service">
+        </div>
+        <div class="service-body">
+          <span class="service-tag service-tag--gold">Best Value</span>
+          <h3>Full Service</h3>
+          <p>The complete package — mowing, hedges, edging, weeding & tidy-up.</p>
+          <a href="booking.html" class="service-link">Book This →</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="services.html" class="btn-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<section class="photo-strip">
+  <div class="strip-track">
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80" alt="Garden 1">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Garden 2">
+    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&q=80" alt="Garden 3">
+    <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=400&q=80" alt="Garden 4">
+    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&q=80" alt="Garden 5">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=400&q=80" alt="Garden 6">
+    <!-- Repeat for infinite effect -->
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80" alt="Garden 1">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Garden 2">
+    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&q=80" alt="Garden 3">
+    <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=400&q=80" alt="Garden 4">
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div>
+      <h2>Ready for a tidy garden?</h2>
+      <p>Book online in seconds or give us a call.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="booking.html" class="btn-primary">Book a Service</a>
+      <a href="tel:0421722604" class="btn-ghost">📞 0421 722 604</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">MHD<span class="logo-accent"> Gardening</span></span>
+      </a>
+      <p>Professional garden care across Brisbane & surrounds.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book Online</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <a href="tel:0421722604">📞 0421 722 604</a>
+      <a href="mailto:mhdgardening@gmail.com">✉️ mhdgardening@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 MHD Gardening. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
