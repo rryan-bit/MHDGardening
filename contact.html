@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – MHD Gardening</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // ─────────────────────────────────────────────────────────────
+  // EMAILJS SETUP  (free at emailjs.com — takes ~5 minutes)
+  //
+  //  1. Sign up free at https://emailjs.com
+  //  2. Add Email Service → connect Gmail → copy the Service ID
+  //  3. Create an Email Template with these variables:
+  //       {{from_name}}  {{from_email}}  {{phone}}
+  //       {{suburb}}     {{subject}}     {{message}}
+  //     Set "To Email" to: mhdgardening@gmail.com
+  //  4. Copy your Public Key from Account › General › API Keys
+  //  5. Replace the three placeholder strings below
+  // ─────────────────────────────────────────────────────────────
+  window.EMAILJS_SERVICE_ID  = "service_7whhpw7";   // e.g. "service_abc123"
+  window.EMAILJS_TEMPLATE_ID = "template_en7rfz5";  // e.g. "template_xyz789"
+  window.EMAILJS_PUBLIC_KEY  = "AlmTSct5qkJy2xhkQ";   // e.g. "aBcDeFgHiJkLmNoP"
+
+  emailjs.init({ publicKey: window.EMAILJS_PUBLIC_KEY });
+</script>
+</head>
+<body>
