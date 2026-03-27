@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services – MHD Gardening</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  window.EMAILJS_SERVICE_ID  = "service_3fysqs9";
+  window.EMAILJS_TEMPLATE_ID = "template_3g93n0i";
+  window.EMAILJS_PUBLIC_KEY  = "AlmTSct5qkJy2xhkQ";
+  emailjs.init({ publicKey: window.EMAILJS_PUBLIC_KEY });
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="mhd-logo.png" alt="MHD Gardening Logo" class="logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="booking.html">Book</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1600&q=80" alt="Garden services">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <p class="hero-eyebrow">What We Offer</p>
+    <h1 class="page-title">Our Services</h1>
+    <p>Quality garden care tailored to your property.</p>
+  </div>
+</section>
+
+<!-- SERVICES DETAIL -->
+<section class="services-detail">
+  <div class="container">
+
+    <div class="svc-row">
+      <div class="svc-img">
+        <img src="simple-mow.png" alt="Lawn mowing service">
+      </div>
+      <div class="svc-text">
+        <span class="service-tag">Most Popular</span>
+        <h2>🌿 Simple Mow</h2>
+        <p>Our signature lawn mowing service keeps your yard looking fresh and well-maintained. We mow to an even height, edge along paths and garden beds, and blow away clippings — leaving your lawn clean and tidy.</p>
+        <ul class="svc-includes">
+          <li>✓ Full lawn mow (front & back)</li>
+          <li>✓ Edge along paths & driveways</li>
+          <li>✓ Clipping blow-down</li>
+        </ul>
+        <a href="booking.html?service=Simple+Mow" class="btn-primary">Book Simple Mow</a>
+      </div>
+    </div>
+
+    <div class="svc-row svc-row--reverse">
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80" alt="Hedge trimming">
+      </div>
+      <div class="svc-text">
+        <h2>✂️ Hedges & Lawn</h2>
+        <p>Everything in the Simple Mow, plus professional hedge trimming and shaping. Perfect for properties with established hedges, shrubs, or ornamental borders that need regular attention.</p>
+        <ul class="svc-includes">
+          <li>✓ Everything in Simple Mow</li>
+          <li>✓ Hedge trimming & shaping</li>
+          <li>✓ Shrub tidying</li>
+          <li>✓ Green waste removal</li>
+        </ul>
+        <a href="booking.html?service=Hedges+%26+Lawn" class="btn-primary">Book Hedges & Lawn</a>
+      </div>
+    </div>
+
+    <div class="svc-row">
+      <div class="svc-img">
+        <img src="full-service.png" alt="Full garden service">
+      </div>
+      <div class="svc-text">
+        <span class="service-tag service-tag--gold">Best Value</span>
+        <h2>⭐ Full Service</h2>
+        <p>The complete garden transformation. Our most thorough service covers everything from lawn to borders, leaving your entire property looking immaculate. Ideal for seasonal cleans or preparing your home for sale or rental.</p>
+        <ul class="svc-includes">
+          <li>✓ Everything in Hedges & Lawn</li>
+          <li>✓ Weeding of beds & borders</li>
+          <li>✓ Garden tidy & debris removal</li>
+          <li>✓ Detailed edge & trim work</li>
+          <li>✓ Full property blow-down</li>
+        </ul>
+        <a href="booking.html?service=Full+Service" class="btn-primary">Book Full Service</a>
+      </div>
+    </div>
+
+    <div class="svc-row svc-row--reverse">
+      <div class="svc-img">
+        <img src="gutter-cleaning.png" alt="Gutter cleaning service">
+      </div>
+      <div class="svc-text">
+        <h2>🏠 Gutter Cleaning</h2>
+        <p>Blocked gutters can cause serious water damage to your home. Our gutter cleaning service safely clears leaves, debris, and buildup from your gutters and downpipes — keeping your home protected all year round.</p>
+        <ul class="svc-includes">
+          <li>✓ Full gutter clear-out (leaves & debris)</li>
+          <li>✓ Downpipe flush & check</li>
+          <li>✓ Roof edge tidy-up</li>
+          <li>✓ Debris bagged & removed</li>
+        </ul>
+        <a href="booking.html?service=Gutter+Cleaning" class="btn-primary">Book Gutter Cleaning</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div>
+      <h2>Not sure what you need?</h2>
+      <p>Give us a call and we'll help you choose the right service.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="tel:0421722604" class="btn-primary">📞 0421 722 604</a>
+      <a href="booking.html" class="btn-ghost">Book Online</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="mhd-logo.png" alt="MHD Gardening Logo" class="logo-img">
+      </a>
+      <p>Professional garden care across Brisbane & surrounds.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book Online</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <a href="tel:0421722604">📞 0421 722 604</a>
+      <a href="mailto:mhdgardening@gmail.com">✉️ mhdgardening@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 MHD Gardening. All rights reserved.</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
